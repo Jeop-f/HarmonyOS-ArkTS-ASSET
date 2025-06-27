@@ -27,7 +27,7 @@ export class AssetUtil {
     attr.set(asset.Tag.ALIAS, stringToArray(key));
     attr.set(asset.Tag.SECRET, stringToArray(value));
     attr.set(asset.Tag.SYNC_TYPE, asset.SyncType.THIS_DEVICE);
-    attr.set(asset.Tag.CONFLICT_RESOLUTION, asset.ConflictResolution.OVERWRITE); // 冲突时覆盖原有资产
+    attr.set(asset.Tag.CONFLICT_RESOLUTION, asset.ConflictResolution.OVERWRITE); // Overwrite existing assets in case of conflict
     /*
      *The meta-service does not support this API.
      */
